@@ -13,7 +13,7 @@ fi
 
 TIME=$((MINUTES*60))
 
-! dwm -v &>/dev/null && flag=1
+dwm -v &>/dev/null ; [ $? -eq 1 ] && flag=1
 
 while [ $TIME -ge 0 ]
 do
