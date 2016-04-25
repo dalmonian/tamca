@@ -17,10 +17,10 @@ dwm -v &>/dev/null ; [ $? -eq 1 ] && flag=1
 
 while [ $TIME -ge 0 ]
 do
-    TXT=$(printf "\r%0.2d:%0.2d" $((TIME/60)) $((TIME%60)))
+    TXT=$(printf "%0.2d:%0.2d" $((TIME/60)) $((TIME%60)))
     sleep 1
     TIME=$((TIME-1))
-    [ $flag ] && xsetroot -name $TXT || echo "$TXT"
+    [ $flag ] && xsetroot -name $TXT || printf "\r%s" "$TXT"
 done
 
 echo -e "\nIt's time for a five minute break :)"
