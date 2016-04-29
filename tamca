@@ -2,8 +2,8 @@
 # This script is licensed under the 2-clause BSD license. See LICENSE.
 
 # To use a specified noise with mplayer:
-# BEEP="mplayer /path/to/noise.ogg"
-BEEP="`which beep -f 5000 -l 50 -r 2`"
+BEEP="mplayer /path/to/noise.ogg"
+
 if [ -z $1 ]
 then
     MINUTES=25
