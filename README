@@ -8,6 +8,9 @@ stdout.
 Tamca requires mplayer to play the sound at the end of the timer. To use the dwm
 feature, it needs dwm (obviously) and xsetroot.
 
+mplayer is the default on the script, but one can change to any player available
+to system.
+
 This is a fork of https://github.com/acieroid/tamca
 
 The sound distributed with tamca is licensed under CC-BY, by 'ls'. It
